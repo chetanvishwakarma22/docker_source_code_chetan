@@ -1,0 +1,19 @@
+services:
+  tomcat:
+    ports:
+     - 8081:8080
+    image: tomcat:latest
+    restart: always
+  jenkins:
+    ports:
+      - 8090:8080
+      - 50000:50000
+    volumes:
+      - my_jenkins:/var/jenkins_home
+    image: jenkins/jenkins:latest
+    restart: always
+    container_name: my_image
+volumes:
+  my_jenkins:
+~                                                                                                                                                     
+"docker-compose.yaml" 17L, 310B 
