@@ -1,4 +1,4 @@
-// flask-redis 
+// flask-redis file
 services:
   redis:
     image: redislabs/redismod
